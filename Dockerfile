@@ -15,7 +15,7 @@ RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak \
 VOLUME /data
 WORKDIR /app
 
-RUN git clone https://github.com/PPMESSAGE/ppmessage.git \
+RUN git clone https://github.com/cake654326/ppmessage.git \
     && cd /app/ppmessage/ppmessage/scripts/ \
     && bash set-up-ppmessage-on-debian-or-ubuntu.sh
 
