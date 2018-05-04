@@ -67,8 +67,9 @@ if [[ ! -d /data/ppmessage/generic ]]; then
     mkdir -p /data/ppmessage/generic
 fi
 
-
-if [[ $1 == "bash" ]]; then
+export CMD=${CMD:-0}
+if [[ ${CMD} == "bash" ]]; then
+#if [[ $1 == "bash" ]]; then
     /bin/bash
 else
     cd /app/ppmessage
